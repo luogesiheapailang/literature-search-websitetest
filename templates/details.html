@@ -1,0 +1,70 @@
+<div class="main-container">
+    <div id="summary-container">
+        <h1 id="TI">{{ details.json.TI | safe }}</h1>
+        <h3>文献摘要:</h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ details.json.AB | safe }}</p>
+        <a href='https://webofscience.clarivate.cn/wos/woscc/full-record/ + {{ details.json.UT | safe }}'>前往 Web of Science 阅读原文</a>
+        <div id='id' class='{{ details.json.id | safe }}'></div>
+    </div>
+
+    <div class="main-title-container">
+        <div>
+            <h4 class="title">作者：</h4>
+            <p class="content">{{ details.json.AU | safe }}</p>
+        </div>
+        <div>
+            <h4 class="title">页数：</h4>
+            <p class="content">{{ details.json.PG | safe }} 页</p>
+        </div>
+        <div>
+            <h4 class="title">出版日期：</h4>
+            <p class="content">{{ details.json.PY | safe }} {{ details.json.PD | safe }}</p>
+        </div>
+        <div>
+            <h4 class="title">类别：</h4>
+            <p class="content">{{ details.json.WC | safe }}</p>
+        </div>
+        <div>
+            <h4 class="title">研究方向：</h4>
+            <p class="content">{{ details.json.SC | safe }}</p>
+        </div>
+        <div>
+            <h4 class="title">引用的参考文献数：</h4>
+            <p class="content">{{ details.json.NR | safe }} 篇</p>
+        </div>
+        <div>
+            <h4 class="title">被引用次数:<br> (180天内)</h4>
+            <p class="content">{{ details.json.U1 | safe }} 次</p>
+        </div>
+        <div>
+            <h4 class="title">被引用次数:<br>(2013年至今)</h4>
+            <p class="content">{{ details.json.U2 | safe }} 次</p>
+        </div>
+        <div>
+            <h4 class="title">会议标题：</h4>
+            <p class="content">{{ details.json.CT | safe }}</p>
+        </div>
+        <div>
+            <h4 class="title">会议日期：</h4>
+            <p class="content">{{ details.json.CY | safe }}</p>
+        </div>
+        <div>
+            <h4 class="title">会议地点：</h4>
+            <p class="content">{{ details.json.CL | safe }}</p>
+        </div>
+        <div>
+            <h4 class="title">会议赞助方：</h4>
+            <p class="content">{{ details.json.SP | safe }}</p>
+        </div>
+        <div>
+            <h4 class="title">会议主办方：</h4>
+            <p class="content">{{ details.json.HO | safe }}</p>
+        </div>
+
+    </div>
+
+    <div class="topic-modeling-container">
+        <h3>主题分布：</h3>
+        <div id="topic-container">{{ details.json.Topic | safe }}</div>
+    </div>
+</div>

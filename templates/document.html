@@ -1,0 +1,147 @@
+<div class="main-container">
+    <div class="left-column">
+        <div class="content">
+            <div class="md-toc-link-wrapper">
+                <p class="md-toc-link" style="font-weight: bold; font-size:18px; text-indent:1em; margin-bottom: 10%">糖式组 文献搜索网站开发及使用文档</p>
+            </div>
+            <div>
+                <div class="md-toc-link-wrapper" style="margin-left:8px;font-size:18px">
+                    <a href="#1-简介" class="md-toc-link">1. 简介</a>
+                </div>
+                <details style="padding-left:8px;font-size:18px" open="">
+                    <summary class="md-toc-link-wrapper">
+                        <a href="#2-网站开发" class="md-toc-link">2. 网站开发</a>
+                    </summary>
+                    <div>
+                        <div class="md-toc-link-wrapper" style="margin-left:24px;font-size:16px">
+                            <a href="#21-技术栈" class="md-toc-link">
+                                <p>2.1 技术栈</p>
+                            </a>
+                        </div>
+                        <div class="md-toc-link-wrapper" style="margin-left:24px;font-size:16px">
+                            <a href="#22-开发流程" class="md-toc-link">
+                                <p>2.2 开发流程</p>
+                            </a>
+                        </div>
+                    </div>
+                </details>
+                <details style="padding-left:8px;font-size:18px" open="">
+                    <summary class="md-toc-link-wrapper">
+                        <a href="#3-网站使用" class="md-toc-link">3. 网站使用</a>
+                    </summary>
+                    <div>
+                        <div class="md-toc-link-wrapper" style="margin-left:24px;font-size:16px">
+                            <a href="#31-注册与登录" class="md-toc-link">
+                                <p>3.1 注册与登录</p>
+                            </a>
+                        </div>
+                        <summary class="md-toc-link-wrapper" style="margin-left:24px;font-size:16px">
+                            <a href="#32-首页" class="md-toc-link">
+                                <p>3.2 首页</p>
+                            </a>
+                        </summary>
+                        <div>
+                            <div class="md-toc-link-wrapper" style="margin-left:42px;font-size:14px">
+                                <a href="#321-概况" class="md-toc-link">
+                                    <p>3.2.1 概况</p>
+
+                                </a>
+                            </div>
+                            <div class="md-toc-link-wrapper" style="margin-left:42px;font-size:14px">
+                                <a href="#322-搜索" class="md-toc-link">
+                                    <p>3.2.2 搜索</p>
+
+                                </a>
+                            </div>
+                            <div class="md-toc-link-wrapper" style="margin-left:42px;font-size:14px">
+                                <a href="#323-用户信息" class="md-toc-link">
+                                    <p>3.2.3 用户信息</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-toc-link-wrapper" style="margin-left:24px;font-size:16px">
+                        <a href="#33-历史记录" class="md-toc-link">
+                            <p>3.3 历史记录</p>
+                        </a>
+                    </div>
+                    <div class="md-toc-link-wrapper" style="margin-left:24px;font-size:16px">
+                        <a href="#34-文献详情" class="md-toc-link">
+                            <p>3.4 文献详情</p>
+                        </a>
+                    </div>
+                    <div class="md-toc-link-wrapper" style="margin-left:24px;font-size:16px">
+                        <a href="#35-页尾" class="md-toc-link">
+                            <p>3.5 页尾</p>
+                        </a>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+    <div class="right-column">
+        <h1 id="1-简介">1. 简介 </h1>
+        <p>本网站为“山东大学（威海）数据科学与人工智能实验班”大二上学期大作业，目的是为Web of Science网站上的Remots
+            Sensing of
+            Environment期刊建立文献检索和可视化的网站，辅助研究人员进行文献回顾、主题分类并迅速找到研究空白点。</p>
+        <p>该文档旨在介绍文献搜索网站的开发过程和使用方法，帮助用户更好地利用该平台进行文献检索。</p>
+        <h1 id="2-网站开发">2. 网站开发 </h1>
+        <h2 id="21-技术栈">2.1 技术栈 </h2>
+        <ul>
+            <li>前端：HTML5, CSS, JavaScript, XHR</li>
+            <li>后端：Python, Flask框架, py-mysql</li>
+            <li>数据库：MySQL</li>
+            <li>主题模型：LDA, LSI</li>
+            <li>版本管理：Git, <a href="https://gitee.com/Yiqian7a/literature-search-website">Gitee仓库</a></li>
+        </ul>
+
+        <h2 id="22-开发流程">2.2 开发流程 </h2>
+        <ol>
+            <li>搭建后端flask框架，实现用户注册登录、获取首页等简单功能；</li>
+            <li>设计数据库结构，设计表单；设计前端基本界面；</li>
+            <li>串联数据库前后端，实现网页与对应后端操作的一一对应；</li>
+            <li>完善前后端，优化网页结构，提升性能；</li>
+            <li>测试，确保网站稳定性和用户体验。</li>
+        </ol>
+
+        <h1 id="3-网站使用">3. 网站使用 </h1>
+        <h2 id="31-注册与登录">3.1 注册与登录 </h2>
+        <ul>
+            <li>访问网站，如果未登入将跳转至登入界面。</li>
+            <li>点击“注册”按钮进行账号注册，已有账号的用户可以直接输入用户名和密码登录。</li>
+        </ul>
+
+        <h2 id="32-首页">3.2 首页 </h2>
+        <h3 id="321-概况">3.2.1 概况 </h3>
+        <p>页面分为上下两块部分（红线上下），上面的内容不会改变，每一个页面都有，下面的内容根据不同页面会有所改变。当进入主页时，将随机推荐5篇文献，点击标题即可查看详细信息。在页面内跳转后，再点击首页即可返回首页，继续查看刚才查看的文献。</p>
+        <img src="/static/images/document1.png" alt="概况">
+
+        <h3 id="322-搜索">3.2.2 搜索 </h3>
+        <p>在上面的搜索框输入时，会在数据库中搜索，展示作者、标题中包含关键词的内容并高亮。</p>
+        <img src="/static/images/document2.png" alt="搜索">
+        <p>搜索结果如下，点击其中文献将跳转至该文献的详细信息：</p>
+        <img src="/static/images/document3.png" alt="搜索结果">
+
+        <h3 id="323-用户信息">3.2.3 用户信息 </h3>
+        <p>鼠标移至右上角，将弹出小框显示用户绑定的邮箱，可以点击其中的链接跳转至用户历史记录。</p>
+        <img src="/static/images/document4.png" alt="用户信息">
+
+        <h2 id="33-历史记录">3.3 历史记录 </h2>
+        <p>鼠标移至右上角，点击浏览历史，跳转至用户历史记录页面，可以查询到用户最近20条阅读记录。</p>
+        <img src="/static/images/document10.png" alt="历史记录">
+
+        <h2 id="34-文献详情">3.4 文献详情 </h2>
+        <p>点击需要查询的文献，会跳转至文献详情界面。</p>
+        <img src="/static/images/document5.png" alt="查询文献">
+        <p>首先可以查看所查阅文献的摘要，</p>
+        <img src="/static/images/document6.png" alt="文献摘要">
+        <p>下面的表格依次展示了该文献的作者，页数，出版日期等具体信息，</p>
+        <img src="/static/images/document7.png" alt="具体信息1">
+        <p>最后，下面的主题分布图展示了该文献涉及的各主题关键词，各个关键词的比重与对应节点的大小成正比，每个小节点还可以进行拖动，避免遮挡问题。</p>
+        <img src="/static/images/document9.png" alt="主题分布">
+
+        <h2 id="35-页尾">3.5 页尾 </h2>
+        <p>在页尾部分放置了网页源代码仓库的入口，随时方便查看和修改更新。</p>
+        <img src="/static/images/document11.png" alt="页尾">
+    </div>
+</div>

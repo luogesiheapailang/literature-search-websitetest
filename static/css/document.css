@@ -1,0 +1,55 @@
+.main-container {
+    display: flex;
+    background-color: #efefef;
+    padding-top: 5%;
+    margin: 2% 1% 5% 1%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0px lightgray;
+}
+
+
+.left-column {
+    padding: 0 20px 0 20px;
+    width: 20%;
+    border-right: 1px solid #ccc; /* 添加右侧分割线 */
+}
+.content {
+    position: relative;
+    z-index: 99
+}
+
+.left-column details{
+    padding:0;
+}
+.md-toc-link-wrapper,
+.md-toc-link-wrapper p{
+    color: #64656c;
+    padding:0;
+    margin: 5px 0 5px 0;
+}
+.md-toc-link-wrapper::marker{
+    color: #3f414b;
+}
+.md-toc-link-wrapper a{
+    color: #64656c;
+    font-weight: bold;
+}
+
+.right-column {
+    padding: 0 20px 20px 20px;
+    width: 80%;
+    flex:1;
+}
+.right-column img {
+    width: 100%;
+}
+.right-column h2 {
+    text-indent: 0.5em;
+}
+.right-column h3 {
+    text-indent: 1em;
+}
+.right-column p {
+    text-indent: 2em;
+}
