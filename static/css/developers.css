@@ -1,0 +1,30 @@
+.main-container {
+    padding-top: 5%;
+    margin: 5% 10% 5% 10%;
+    width: 80%;
+    background-color: #efefef;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0px lightgray;
+}
+
+.creators {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.creator {
+    width: 40%;
+    padding: 5%;
+    text-align: center;
+}
+.creator img {
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.creator h3 {
+    margin-top:5px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title id="private-title">文献搜索：首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.25">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+    <link rel="stylesheet" type="text/css" id="private-css" href="/static/css/home.css">
+</head>
+
+<body>
+<header>
+    <div class="top-container">
+        <div>
+            <a onclick="get_page('home')">首页</a>
+            <a onclick="get_page('developers')">开发团队</a>
+            <a onclick="get_page('document')">帮助文档</a>
+        </div>
+        <div class="user-profile">
+            <div class="logged-in-info">
+                <div class="username"><i class="fas fa-user"></i>已登录：{{ userData.user_name }}</div>
+                <div class="dropdown-content">
+                    <span>绑定邮箱：{{ userData.user_email }}</span>
+                    <div>
+                        <a onclick="get_page('history')">浏览历史</a>
+                        <a href="/logout">退出登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>AI智能文献搜索</h1>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="搜索作者、标题...">
+        <button type="submit" id="search-button">
+            <i style="font-size: 160%;" class="fas fa-search"></i>
+        </button>
+    </div>
+</header>
+
+<main class="main"></main>
+
+<button id="back-to-top-btn" title="返回顶部">
+    <span id="icon-up" class="fas fa-arrow-up"></span>
+    <span id="text">返回<br>顶部</span>
+</button>
+
+<footer>
+    &copy; 糖式组. All rights reserved. &nbsp;&nbsp;&nbsp;
+    <a href="https://gitee.com/Yiqian7a/literature-search-website">前往Gitee仓库</a>
+</footer>
+
+<script src="/static/js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文献搜索：登入</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/login_register.css">
+</head>
+<body>
+    <header>
+        <h1>AI智能文献搜索</h1>
+        <div class="search-container">
+        </div>
+    </header>
+    <div class="container right-panel-active">
+        <!-- 注册 -->
+        <div class="container__form container--signup">
+            <form class="form" id="form1">
+                <h2 class="form__title">注册账号</h2>
+                <input type="text" id="username" placeholder="用户名" class="input" />
+                <input type="email" id="Remail" placeholder="邮箱" class="input" />
+                <input type="password" id="Rpassword" placeholder="密码" class="input" />
+                <input type="password" id="Rcpassword" placeholder="确认密码" class="input" />
+                <button class="btn">点击注册</button>
+            </form>
+        </div>
+    
+        <!-- 登录 -->
+        <div class="container__form container--signin">
+            <form class="form" id="form2">
+                <h2 class="form__title">欢迎登陆</h2>
+                <input type="email" id="Lemail" placeholder="邮箱" class="input" />
+                <input type="password" id="Lpassword" placeholder="密码" class="input" />
+                <a onclick="forgot()">忘记密码</a>
+                <button class="btn">登录</button>
+            </form>
+        </div>
+    
+        <!-- Overlay -->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay--left">
+                    <button class="btn" id="signin">已有帐号，直接登录</button>
+                </div>
+                <div class="overlay__panel overlay--right">
+                    <button class="btn" id="signup" >没有账号,点击注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/login_register.js"></script>
+    <script>
+    function forgot() {
+        alert("即将开放，敬请期待！");
+    }
+</script>
+
+<footer>
+    &copy; 糖式组. All rights reserved. &nbsp;&nbsp;&nbsp;
+    <a href="https://gitee.com/Yiqian7a/literature-search-website">前往Gitee仓库</a>
+</footer>
+
+</body>
+
+</html>
