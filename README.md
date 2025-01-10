@@ -24,7 +24,7 @@
 - 后端：Python, Flask框架, py-mysql
 - 数据库：MySQL
 - 主题模型：LDA, LSI
-- 版本管理：Git, [Gitee仓库](https://gitee.com/Yiqian7a/literature-search-website)
+- 版本管理：Git
 
 #### 4.2 开发流程
 
